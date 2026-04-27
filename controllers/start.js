@@ -38,7 +38,7 @@ const start = {
     logger.info("Start page loading!");
     
     const viewData = {
-      title: "Welcome to Grettel's Playlist app!",
+      title: "Welcome to the Playlist app!",
       info: appStore.getAppInfo()
     };
     

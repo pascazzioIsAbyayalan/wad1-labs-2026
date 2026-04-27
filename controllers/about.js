@@ -9,9 +9,12 @@ const about = {
   createView(request, response) {
     logger.info("About page loading!");
 
+    const employeesData = card.getAppInfo();
+    const employees = Array.isArray(employeesData) ? employeesData : [];
+
     const viewData = {
       title: "About the Playlist App",
-      employee: card.getAppInfo()
+      employees
     };
 
     response.render('about', viewData);  
