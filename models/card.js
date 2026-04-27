@@ -7,7 +7,6 @@ const card = {
 
   store: new JsonStore('./models/card.json', { employee: {} }),
   collection: 'employee',
-  array: "",
 
   getAppInfo() {
     return this.store.findAll(this.collection);
